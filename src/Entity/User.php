@@ -32,7 +32,7 @@ class User
      */
     public function getName(): ?string
     {
-        return $this->name;
+        return '_'.$this->name;
     }
 
     /**

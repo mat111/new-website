@@ -48,21 +48,6 @@ class UserManager
     }
 
     /**
-     * @return User[]
-     */
-    public function getPrefixedUsers()
-    {
-        $users = $this->findAll();
-
-        /** @var User $user */
-        foreach ($users as $user){
-            $user->setName('_'.$user->getName());
-        }
-
-        return $users;
-    }
-
-    /**
      * @param User $user
      * @return User
      * @throws \Doctrine\ORM\ORMException
