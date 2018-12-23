@@ -1,0 +1,6 @@
+.idea/
+vagrant/
+vendor/
+var/
+.env
+symfony.lock
